@@ -20,11 +20,11 @@ public class FetchTest {
 	    Employee emp1=(Employee)session1.load(Employee.class,1);    
 	    System.out.println(emp1.getId()+" "+emp1.getName()+" "+emp1.getSalary());    
 	    session1.close();
-	  /*  Cache cache = factory.getCache();
+	  Cache cache = factory.getCache();
 
 	    if (cache != null) {
 	        cache.evictAllRegions(); // Evict data from all query regions.
-	    }	*/    Thread.sleep(12*1000);
+	    }	   Thread.sleep(12*1000);
 	    Session session2=factory.openSession();    
 	    Employee emp2=(Employee)session2.load(Employee.class,1);    
 	    System.out.println(emp2.getId()+" "+emp2.getName()+" "+emp2.getSalary());    

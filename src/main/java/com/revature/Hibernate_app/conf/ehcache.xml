@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<ehcache>
+
+<defaultCache maxElementsInMemory="100" eternal="false" timeToIdleSeconds="0" timeToLiveSeconds="0" />
+<cache name="com.revature.Hibernate_app.model.Employee" maxElementsInMemory="100" eternal="false" timeToIdleSeconds="0" timeToLiveSeconds="0" />
+
+</ehcache>
